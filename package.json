@@ -1,0 +1,28 @@
+{
+	"name": "my-mcp-server",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"format": "biome format --write",
+		"lint:fix": "biome lint --fix",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.12.1",
+		"agents": "^0.0.94",
+		"axios": "^1.9.0",
+		"zod": "^3.25.51"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@nestjs/cli": "^11.0.7",
+		"@types/node": "^22.15.30",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.19.1"
+	},
+	"packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}
